@@ -1,0 +1,21 @@
+@import '../../assets//styles/variable.scss';
+
+.bttn {
+  background: $primary;
+  border-radius: 4px;
+  height: 45px;
+  max-width: 130px;
+  min-width: 130px;
+  width: 100%;
+  color: #f4eeff;
+   
+
+//   padding: 15px;
+  font-family: 'Poppins Medium';
+  font-size: 18px;
+  border: 1px solid $primary;
+}
+.bttn.outlined {
+  background: transparent;
+  color: $primary;
+}

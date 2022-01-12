@@ -1,0 +1,63 @@
+@import '../../assets/styles/variable.scss';
+
+.navContainer {
+  padding: 51px 7.4167%;
+  background: $secodaryDark;
+  height: 100px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  position: sticky;
+  .navbrand {
+    max-width: 200px;
+    img {
+      object-fit: contain;
+      height: 20px;
+      width: 100%;
+    }
+  }
+  .navlink {
+    font-family: 'Poppins SemiBold';
+    font-size: 20px;
+    line-height: 36px;
+    color: $white !important;
+    // padding: 0px 20px !important;
+    margin: 10px;
+  }
+  .navlink:last-child {
+    margin: 10px 0px !important;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 7px 25px;
+    .navbrand {
+      max-width: 136px;
+    }
+    .navlink {
+      font-size: 18px;
+      margin: 5px;
+    }
+    .navlink:last-child {
+      margin: 5px 0px !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 7px 20px;
+    height: auto;
+    .navbrand {
+      max-width: 136px;
+    }
+     
+    .navbar-toggler {
+      padding: 0px 3px;
+    }
+    .divider {
+      width: 95%;
+      top: 60px;
+      position: absolute;
+      height: 1px;
+      background: $primary;
+      border-bottom: 1px solid $primary;
+      margin: auto;
+    }
+  }
+}

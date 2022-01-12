@@ -1,0 +1,25 @@
+@import '../../assets/styles/variable.scss';
+
+.brand-wrapper{
+    background: $secodaryDark;
+    height: 100px;
+    padding: 51px 7.416%;
+     
+    .brand{
+        max-width: 172.44px;
+        margin: 10px 30px;
+        
+    }
+    img{
+        max-height: 32px;
+        min-width: 150px;
+        width: 100%;
+        object-fit: contain;
+      
+    }
+    @media screen and (max-width: 425px) {
+        padding: 21px 7.416%;
+
+    }
+
+}

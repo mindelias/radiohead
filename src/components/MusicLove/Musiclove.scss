@@ -1,0 +1,36 @@
+@import '../../assets//styles/variable.scss';
+
+.music-love-wrapper {
+  background: $primaryDark;
+  padding: 20px 7.416% 0% 7.416%;
+
+  .music-love-item {
+  }
+
+  .item {
+    margin: 10px 30px;
+    // max-width: 300px;
+  }
+   
+  img {
+    min-width: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+   
+  @media screen and (max-width: 1024px) {
+    padding: 20px 7.416%;
+    img {
+        min-width: 150px;
+        width: 100%;
+      }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 7.416%;
+     
+
+  }
+}

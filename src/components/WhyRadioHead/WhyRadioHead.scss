@@ -1,0 +1,12 @@
+@import '../../assets//styles/variable.scss';
+
+.why-radiohead-wrapper {
+  background: $primaryDark;
+  padding: 20px 7.416%;
+
+  @media screen and (max-width: 1024px) {
+    padding: 7px 7.416%;
+  }
+  @media screen and (max-width: 768px) {
+  }
+}

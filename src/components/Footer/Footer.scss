@@ -1,0 +1,44 @@
+@import '../../assets/styles/variable.scss';
+
+.footer-wrapper {
+  background: $secodaryDark;
+  padding: 51px 7.416%;
+  .logo {
+    max-width: 150px;
+    img {
+      object-fit: contain;
+      height: 20px;
+      width: 100%;
+    }
+  }
+.col-6:nth-child(2){
+    order: 4!important;
+}
+.col-6:nth-child(3){
+    order: 2!important;
+}
+  @media screen and (max-width: 1024px) {
+    padding: 20px 7.416%;
+  }
+
+   
+}
+.footer-socials {
+  background: $primaryDark;
+  height: 80px;
+  img {
+    width: 25px;
+    max-height: 30px;
+    margin: 25px;
+  }
+  img:nth-child(2) {
+    width: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    img {
+      width: 20px;
+      max-height: 25px;
+      margin: 25px;
+    }
+  }
+}

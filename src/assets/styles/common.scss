@@ -1,0 +1,62 @@
+h1 {
+  font-family: 'Poppins Medium';
+  font-size: 30px;
+  line-height: 52px;
+  color: $white;
+}
+.display-1,
+.display-2,
+.display-3 {
+  font-family: 'Poppins Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: $neutralGray;
+  margin-bottom: 20px;
+}
+.display-2 {
+  line-height: 20px !important;
+  font-size: 18px !important;
+}
+.display-3 {
+  line-height: 20px !important;
+  font-size: 15px !important;
+}
+h3 {
+  font-family: 'Poppins Bold';
+  line-height: 35px;
+  font-size: 25px;
+  color: $white;
+}
+
+.bar {
+  min-width: 4px;
+  width: 4px;
+  height: 48px;
+  background: $primary;
+  border-radius: 2.5px;
+}
+.text-gray {
+  color: $neutralGray !important;
+}
+.text-light {
+  color: $white !important;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+  .bar {
+    min-width: 3px;
+    width: 3px;
+    height: 38px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .display-1,
+  .display-2 {
+    font-size: 14px;
+  }
+}
