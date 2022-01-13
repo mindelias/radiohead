@@ -1,7 +1,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./assets/styles/variable.scss";
 
 body {
   margin: 0;
+  background: $primaryDark;
    
 }
 

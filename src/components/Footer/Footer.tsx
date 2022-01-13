@@ -2,11 +2,12 @@ import React from 'react';
 import { footerMenu } from '../../core/data/footer-menu';
 import logo from '../../assets/images/logo.png';
 import './Footer.scss';
+import FadeInComponentWhenVisible from '../FadeInComponent';
 
 const Footer = () => {
   return (
     <>
-      <div className='footer-wrapper'>
+      <FadeInComponentWhenVisible className='footer-wrapper'>
         <div className='ms-3'>
           <div className='logo'>
             <img src={logo} alt='' />
@@ -33,7 +34,7 @@ const Footer = () => {
             </section>
           </div>
         </div>
-      </div>
+      </FadeInComponentWhenVisible>
       <div className='footer-socials'>
         <section className='d-flex justify-content-center align-items-center '>
           {footerMenu.socials.map((item) => (

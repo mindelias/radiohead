@@ -9,6 +9,7 @@ import iPhone3 from '../../assets/images/iPhone 3.png';
 import iPhone4 from '../../assets/images/iPhone 4.png';
 import iPhone5 from '../../assets/images/iPhone 5.png';
 import iPhone6 from '../../assets/images/iPhone 6.png';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   return (
@@ -32,19 +33,71 @@ const Header = () => {
         <div className='col-xl-6 col-lg-7 d-lg-block d-none'>
           <div className='gallery-container row'>
             <div className='gallery item-1 col-4'>
-              <img src={iPhone1} alt='' />
+              <motion.img
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                  repeatType: 'reverse',
+                  bounce: 0.5
+                }}
+                animate={{ x: [150, 200], opacity: 1 }}
+                initial={{ opacity: 1, x: 150 }}
+                src={iPhone1}
+              />
+              {/* <img src={iPhone1} alt='' /> */}
             </div>
             <div className='gallery item-2 col-4'>
               <img src={iPhone2} alt='' />
             </div>
             <div className='gallery item-3 col-4'>
-              <img src={iPhone3} alt='' />
+              {/* <img src={iPhone3} alt='' /> */}
+              <motion.img
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                  repeatType: 'reverse',
+                  bounce: 0.5
+                }}
+                animate={{ x: [20, 10], opacity: 1, y: 200 }}
+                initial={{ opacity: 1, y: 200 }}
+                src={iPhone3}
+              />
             </div>
             <div className='gallery item-4 col-4'>
-              <img src={iPhone4} alt='' />
+              <motion.img
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                  repeatType: 'reverse',
+                  bounce: 0.5
+                }}
+                animate={{ x: [-10, -30], opacity: 1 }}
+                initial={{ opacity: 1, y: -135 }}
+                src={iPhone4}
+              />
+              {/* <img src={iPhone4} alt='' /> */}
             </div>
             <div className='gallery item-5 col-4'>
-              <img src={iPhone5} alt='' />
+              <motion.img
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                  repeatType: 'reverse',
+                  bounce: 0.5
+                }}
+                animate={{ x: [-10, -30], opacity: 1, y: -100 }}
+                initial={{ opacity: 1, y: -100 }}
+                src={iPhone5}
+              />
+              {/* <img src={iPhone5} alt='' /> */}
             </div>
             <div className='gallery item-6 col-4'>
               <img src={iPhone6} alt='' />

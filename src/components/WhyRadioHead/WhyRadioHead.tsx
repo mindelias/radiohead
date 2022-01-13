@@ -1,10 +1,11 @@
 import React from 'react';
 import { whyRadioheadData } from '../../core/data/why-radiohead';
+import FadeInComponentWhenVisible from '../FadeInComponent';
 import './WhyRadioHead.scss';
 
 const WhyRadioHead = () => {
   return (
-    <div className='why-radiohead-wrapper '>
+    <FadeInComponentWhenVisible className='why-radiohead-wrapper'>
       <div className='ms-3'>
         <h1>Why radiohead?</h1>
         <section className='row justify-content-between  my-4 '>
@@ -19,7 +20,7 @@ const WhyRadioHead = () => {
           ))}
         </section>
       </div>
-    </div>
+    </FadeInComponentWhenVisible>
   );
 };
 

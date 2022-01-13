@@ -3,7 +3,7 @@
   background-color: $primaryDark;
   overflow: hidden;
   height: 70vh;
-  max-height: 70vh;
+//   max-height: 100vh;
 
   .header-container {
     .text-container {
@@ -23,6 +23,7 @@
       height: 100%;
 
       .gallery {
+        transition: width  4s ease-in-out 1s;
         img {
           max-width: 140%;
           object-fit: contain;
@@ -39,6 +40,9 @@
       .item-2 img {
         top: 0%;
         transform: translate(55%, 0%);
+        
+
+        
       }
       .item-3 img {
         width: 100%;
@@ -54,14 +58,17 @@
       .item-6 img {
         
         transform: translate(-55%, 120%);
+        height: 100px;
       }
     }
   }
-
+   
+  @media screen and (max-width: 1640px) and (min-width: 1300px) {
+      height: 100vh;
+  }
    
   @media screen and (max-width: 1200px) {
-    height: 70vh;
-    max-height: 70vh;
+     
     .header-container {
         .text-container {
             padding: 20px 7.416%;
